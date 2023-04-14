@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "secure-ls": "^1.2.6",
     "vue": "^3.2.45",
     "vue-router": "^4.0.13"
   },

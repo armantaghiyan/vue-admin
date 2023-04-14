@@ -2,7 +2,15 @@ import {createApp} from 'vue'
 import './style.css'
 import App from './App.vue'
 
+import './utils/install-secure-ls'
+
 const app = createApp(App)
+
+//install plugins
+import translate from './plugins/translate/main'
+import fa from './lang/fa'
+import en from './lang/en'
+app.use(translate, {languages: {fa: fa, en: en}, default: 'en', key: 'lang'})
 
 //install vue router
 import router from './routes.js'

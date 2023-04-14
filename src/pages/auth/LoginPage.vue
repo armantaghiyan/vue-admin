@@ -15,17 +15,17 @@
 
                 <div class="py-6">
                     <logo class="mb-6"/>
-                    <h5 class="pb-1">Welcome to Admin! 👋🏻</h5>
-                    <p>Please sign-in to your account and start the adventure</p>
+                    <h5 class="pb-1">{{ $t('login_page_title') }}</h5>
+                    <p>{{ $t('login_page_desc') }}</p>
                 </div>
 
                 <form @submit.prevent="test">
                     <div class="flex flex-col">
 
-                        <form-input type="text" label="Email" v-model="email"/>
-                        <form-input type="password" label="Password" v-model="password"/>
+                        <form-input type="text" :label="$t('email')" v-model="email"/>
+                        <form-input type="password" :label="$t('password')" v-model="password"/>
 
-                        <button class="bg-theme-primary rounded-md h-[38px] text-white mt-3 text-sm" type="submit">LOGIN</button>
+                        <button class="bg-theme-primary rounded-md h-[38px] text-white mt-3 text-sm uppercase" type="submit">{{$t('login')}}</button>
                     </div>
                 </form>
 
@@ -48,6 +48,6 @@ export default {
             console.log(this.email)
             console.log(this.password)
         }
-    }
+    },
 }
 </script>

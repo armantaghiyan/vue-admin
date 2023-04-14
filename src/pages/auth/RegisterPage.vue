@@ -15,18 +15,18 @@
 
                 <div class="py-6">
                     <logo class="mb-6"/>
-                    <h5 class="pb-1">Adventure starts here 🚀</h5>
-                    <p>Make your app management easy and fun!</p>
+                    <h5 class="pb-1">{{ $t('register_page_title') }}</h5>
+                    <p>{{ $t('register_page_desc') }}</p>
                 </div>
 
                 <form @submit.prevent="test">
                     <div class="flex flex-col">
 
-                        <form-input type="text" label="Email" v-model="email"/>
-                        <form-input type="password" label="Password" v-model="password"/>
-                        <form-input type="password" label="Password Confirm" v-model="passwordConfirm"/>
+                        <form-input type="text" :label="$t('username')" v-model="username"/>
+                        <form-input type="text" :label="$t('email')" v-model="email"/>
+                        <form-input type="password" :label="$t('password')" v-model="password"/>
 
-                        <button class="bg-theme-primary rounded-md h-[38px] text-white mt-3 text-sm" type="submit">Register</button>
+                        <button class="bg-theme-primary rounded-md h-[38px] text-white mt-3 text-sm uppercase" type="submit">{{$t('register')}}</button>
                     </div>
                 </form>
 
@@ -40,9 +40,9 @@
 export default {
     data() {
         return {
+            username: '',
             email: '',
             password: '',
-            passwordConfirm: ''
         }
     },
     methods: {
