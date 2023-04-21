@@ -1,0 +1,21 @@
+{
+  "languages": {
+    "fa":  "Persian",
+    "en":  "English"
+  },
+  "main": {
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "login": "Login",
+    "register": "Register"
+  },
+  "login_page": {
+    "title": "Welcome to Admin! 👋🏻",
+    "desc": "Please sign-in to your account and start the adventure"
+  },
+  "register_page": {
+    "title": "Adventure starts here 🚀",
+    "desc": "Make your app management easy and fun!"
+  }
+}

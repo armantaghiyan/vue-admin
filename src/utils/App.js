@@ -2,10 +2,10 @@ import app from '../stores/app'
 
 export default class App {
     start() {
-        this.#setDirectionAndFont()
+        this.setDirectionAndFont()
     }
 
-    #setDirectionAndFont() {
+    setDirectionAndFont() {
         const lang = app.getLang()
 
         const elem = document.getElementById('app')

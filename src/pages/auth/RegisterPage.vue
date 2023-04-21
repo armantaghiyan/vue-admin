@@ -13,8 +13,8 @@
             <div class="max-w-[468px] p-6">
                 <div class="py-6">
                     <logo class="mb-6"/>
-                    <h5 class="pb-1">{{ $t('register_page_title') }}</h5>
-                    <p>{{ $t('register_page_desc') }}</p>
+                    <h5 class="pb-1">{{ $t('register_page.title') }}</h5>
+                    <p>{{ $t('register_page.desc') }}</p>
                 </div>
 
                 <register-form/>

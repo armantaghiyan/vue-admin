@@ -13,12 +13,9 @@
             <div class="max-w-[468px] p-6">
                 <div class="py-6">
                     <logo class="mb-6"/>
-                    <h5 class="pb-1">{{ $t('login_page_title') }}</h5>
-                    <p>{{ $t('login_page_desc') }}</p>
+                    <h5 class="pb-1">{{ $t('login_page.title') }}</h5>
+                    <p>{{ $t('login_page.desc') }}</p>
                 </div>
-
-                <button @click="$app.setLangFa()" class="px-4 bg-green-500">fa</button>
-                <button @click="$app.setLangEn()" class="px-4 bg-red-500">en</button>
 
                 <login-form/>
             </div>

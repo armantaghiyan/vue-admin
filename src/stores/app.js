@@ -13,13 +13,9 @@ const app = reactive({
         this.lang = lang
         return lang
     },
-    setLangFa() {
-        this.lang = 'fa'
-        config.set(CONFIG_LANG, 'fa')
-    },
-    setLangEn() {
-        this.lang = 'en'
-        config.set(CONFIG_LANG, 'en')
+    setLang(lang) {
+        this.lang = lang
+        config.set(CONFIG_LANG, lang)
     },
 })
 

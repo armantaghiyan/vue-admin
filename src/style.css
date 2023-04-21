@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.icon {
+    font-size: 24px !important;
+    @apply text-theme-gray_2 text-base
+}
+
 @layer base {
     h1 {
         @apply font-bold text-2xl text-theme-gray_1;
