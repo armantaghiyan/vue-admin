@@ -7,3 +7,13 @@
         <router-view v-else/>
     </div>
 </template>
+
+<script>
+import App from './utils/App.js'
+
+export default {
+    mounted() {
+        (new App()).start()
+    }
+}
+</script>

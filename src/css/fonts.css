@@ -1,0 +1,133 @@
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 100;
+    src: url('/fonts/en/PublicSans-Thin-100.woff2');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 200;
+    src: url('/fonts/en/PublicSans-ExtraLight-200');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 300;
+    src: url('/fonts/en/PublicSans-Light-300.woff2');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 400;
+    src: url('/fonts/en/PublicSans-Regular-400.woff2');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 500;
+    src: url('/fonts/en/PublicSans-Medium-500.woff2');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 600;
+    src: url('/fonts/en/PublicSans-SemiBold-600.woff2');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 700;
+    src: url('/fonts/en/PublicSans-Bold-700.woff2');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 800;
+    src: url('/fonts/en/PublicSans-ExtraBold-800.woff2');
+}
+
+@font-face {
+    font-family: PubblicSans;
+    font-weight: 900;
+    src: url('/fonts/en/PublicSans-Black-900.woff2');
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa//Vazirmatn-FD-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url('/fonts/fa/Vazirmatn-FD-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.lrtFont{
+    font-family: 'PubblicSans', serif;
+}
+
+.rtlFont{
+    font-family: 'Vazirmatn FD', serif;
+}

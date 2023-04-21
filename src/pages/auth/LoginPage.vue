@@ -10,44 +10,18 @@
         </div>
 
         <div class="lg:col-span-4 col-span-12 flex flex-col items-center justify-center p-4">
-
             <div class="max-w-[468px] p-6">
-
                 <div class="py-6">
                     <logo class="mb-6"/>
                     <h5 class="pb-1">{{ $t('login_page_title') }}</h5>
                     <p>{{ $t('login_page_desc') }}</p>
                 </div>
 
-                <form @submit.prevent="test">
-                    <div class="flex flex-col">
+                <button @click="$app.setLangFa()" class="px-4 bg-green-500">fa</button>
+                <button @click="$app.setLangEn()" class="px-4 bg-red-500">en</button>
 
-                        <form-input type="text" :label="$t('email')" v-model="email"/>
-                        <form-input type="password" :label="$t('password')" v-model="password"/>
-
-                        <button class="bg-theme-primary rounded-md h-[38px] text-white mt-3 text-sm uppercase" type="submit">{{$t('login')}}</button>
-                    </div>
-                </form>
-
+                <login-form/>
             </div>
-
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    data() {
-        return {
-            email: '',
-            password: ''
-        }
-    },
-    methods: {
-        test() {
-            console.log(this.email)
-            console.log(this.password)
-        }
-    },
-}
-</script>

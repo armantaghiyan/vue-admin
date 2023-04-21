@@ -6,6 +6,12 @@ import './utils/install-secure-ls'
 
 const app = createApp(App)
 
+//import stores
+import user from './stores/user.js'
+import appStore from './stores/app.js'
+app.config.globalProperties.$user = user
+app.config.globalProperties.$app = appStore
+
 //install plugins
 import translate from './plugins/translate/main'
 import fa from './lang/fa'
@@ -16,10 +22,11 @@ app.use(translate, {languages: {fa: fa, en: en}, default: 'en', key: 'lang'})
 import router from './routes.js'
 app.use(router)
 
-//import stores
-import user from './stores/user.js'
-app.config.globalProperties.$user = user
-
+//import forms
+import loginForm from './components/forms/auth/login-form.vue'
+import registerForm from './components/forms/auth/register-form.vue'
+app.component('login-form', loginForm)
+app.component('register-form', registerForm)
 
 //import components
 import pageLayout from './components/page-layout.vue'

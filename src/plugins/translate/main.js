@@ -1,14 +1,14 @@
+import appStore from '../../stores/app'
+
 export default {
     install: (app, options) => {
         app.config.globalProperties.$t = (key) => {
 
-            let lang = config.get(CONFIG_LANG)
-            if (lang === '') {
-                config.set(CONFIG_LANG, options.default)
-                lang = options.default
-            }
+            const lang = appStore.getLang(options.default)
 
-            return options.languages[lang][key]
+            const result = options.languages[lang][key]
+
+            return result !== undefined ? result : ''
         }
     }
 }
