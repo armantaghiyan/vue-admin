@@ -17,5 +17,13 @@
   "register_page": {
     "title": "Adventure starts here 🚀",
     "desc": "Make your app management easy and fun!"
+  },
+  "sample": {
+    "session": "Session",
+    "paid_users": "Paid Users",
+    "active_users": "Active Users",
+    "pending_users": "Pending Users",
+    "total_users": "Total Users",
+    "last_week_analytics": "Last week analytics"
   }
 }

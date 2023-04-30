@@ -1,7 +1,7 @@
 import {reactive} from 'vue'
 
 const user = reactive({
-    isLogin: false,
+    isLogin: true,
 
     login(){
         this.isLogin = true

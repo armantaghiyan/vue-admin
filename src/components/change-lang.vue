@@ -1,10 +1,19 @@
 <template>
-    <div class="locale-changer">
-        <select v-model="$i18n.locale">
-            <option value="en">{{ $t('languages.en') }}</option>
-            <option value="fa">{{ $t('languages.fa') }}</option>
-        </select>
-    </div>
+    <option-menu boxClass="w-[130px] top-[54px]">
+        <template #option-menu-button>
+            <button class="w-[38px] h-[38px] flex items-center justify-center hover:bg-theme-gray_0 duration-150 rounded-full">
+                <span class="mdi mdi-translate icon"></span>
+            </button>
+        </template>
+        <template #default>
+            <option-menu-item>
+                <div @click="$i18n.locale='en'" class="option-menu-item text-base m-1">{{ $t('languages.en') }}</div>
+            </option-menu-item>
+            <option-menu-item>
+                <div @click="$i18n.locale='fa'" class="option-menu-item text-base m-1">{{ $t('languages.fa') }}</div>
+            </option-menu-item>
+        </template>
+    </option-menu>
 </template>
 
 <script>

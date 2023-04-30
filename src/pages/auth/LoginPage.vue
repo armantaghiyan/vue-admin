@@ -3,7 +3,7 @@
         <div class="col-span-8 lg:flex items-center hidden">
             <div class="px-4"></div>
             <div class="grow h-full flex flex-col">
-                <div class="flex items-center justify-center grow my-8 rounded-xl" style="background-color: #f8f7fa;">
+                <div class="flex items-center justify-center grow my-8 rounded-xl bg-theme-gray_0">
                     <img src="/images/auth-login.png" class="max-w-[500px]">
                 </div>
             </div>

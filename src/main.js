@@ -30,9 +30,19 @@ import pageLayout from './components/page-layout.vue'
 import logo from './components/logo.vue'
 import formInput from './components/form-input.vue'
 import changeLang from './components/change-lang.vue'
+import optionMenu from './components/option-menu.vue'
+import cart from './components/cart.vue'
+import {MenuItem} from "@headlessui/vue";
 app.component('page-layout', pageLayout)
 app.component('logo', logo)
 app.component('form-input', formInput)
 app.component('change-lang', changeLang)
+app.component('option-menu', optionMenu)
+app.component('option-menu-item', MenuItem)
+app.component('cart', cart)
+
+//import fragments
+import headerFragment from './fragments/main/header-fragment.vue'
+app.component('header-fragment', headerFragment)
 
 app.mount('#app')
